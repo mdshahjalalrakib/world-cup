@@ -1,0 +1,129 @@
+/*----------- linked-google font-family---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Style+Script&display=swap');
+
+body {
+    font-family: 'Roboto';
+}
+
+/* -----first Section------- */
+.content-btn-image {
+    background-color: black;
+    width: 1100px;
+    height: 646px;
+    border-radius: 30px;
+    display: flex;
+    margin: 50px auto;
+
+}
+
+.content {
+    color: white;
+    padding: 70px;
+    width: 60%;
+    align-items: center;
+
+
+}
+
+.content h1 {
+    margin-top: 50px;
+    font: 700;
+    font-size: 50px;
+}
+
+.content p {
+    margin-bottom: 30px;
+
+    font: 300;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #DD0000;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+.image img {
+    width: 500px;
+    margin-top: 120px;
+    margin-right: 50px;
+
+}
+
+.image {
+    width: 50%;
+}
+
+.buttons {
+    background-color: gray;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4px;
+}
+
+.button {
+    background-color: white;
+    padding: 20px 30px;
+    width: 60%;
+    height: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+
+#redcolor {
+    background-color: #DD0000;
+    color: white;
+}
+
+.asid-blogs {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -10px;
+    width: 100%;
+
+}
+
+.blogs-main { 
+    margin-left: 15px;
+    width: 100%;
+    margin-top: -4px;
+}
+
+.blog-items {
+    width: 280px;
+    height: 340px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: grid;
+}
+
+.player-text {
+    margin-left: 10px;
+}
+
+.player-text button {
+    padding: 3px 8px;
+
+}
+
+.player-image img {
+    width: 280px;
+}
