@@ -201,3 +201,74 @@ footer {
     text-decoration: none;
     color: white;
 }
+
+.social-media {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social-media a i {
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+
+/* For Responsibe Page */
+@media screen and (max-width:576px) {
+
+    /* ----first-section------ */
+    .content-btn-image {
+        flex-direction: column;
+        width: 630px;
+        height: 1150px;
+        align-items: center;
+        text-align: center;
+        margin-left: 18%;
+    }
+
+    .image {
+        margin-top: -173px;
+        margin-right: 300px;
+    }
+
+    .asid-blogs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogs-main {
+        margin-left: 15px;
+        width: 100%;
+        margin-top: -4px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        column-gap: 15px;
+        margin-left: 50%;
+    }
+
+    .buttons {
+        background: none;
+        margin-bottom: 50px;
+        margin-left: 50%;
+    }
+
+    .button {
+        border: 1px solid rgb(201, 201, 201);
+    }
+
+
+    footer {
+        margin-left: 5%;
+        width: 577px;
+
+    }
+
+    .menu-list {
+        flex-direction: column;
+
+    }
+
+
+}
