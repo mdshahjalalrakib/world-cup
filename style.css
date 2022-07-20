@@ -1,6 +1,11 @@
 /*----------- linked-google font-family---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Style+Script&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto';
 }
@@ -8,7 +13,7 @@ body {
 /* -----first Section------- */
 .content-btn-image {
     background-color: black;
-    width: 1100px;
+    width: 1150px;
     height: 646px;
     border-radius: 30px;
     display: flex;
@@ -27,11 +32,12 @@ body {
 
 .content h1 {
     margin-top: 50px;
-    font: 700;
-    font-size: 50px;
+    font: 800;
+    font-size: 60px;
 }
 
 .content p {
+    margin-top: 40px;
     margin-bottom: 30px;
 
     font: 300;
@@ -50,8 +56,8 @@ body {
 }
 
 .image img {
-    width: 500px;
-    margin-top: 120px;
+    width: 550px;
+    margin-top: 111px;
     margin-right: 50px;
 
 }
@@ -97,14 +103,18 @@ body {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: -10px;
-    width: 100%;
+    width: 80%;
 
 }
 
-.blogs-main { 
+.blogs-main {
     margin-left: 15px;
     width: 100%;
     margin-top: -4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 15px;
 }
 
 .blog-items {
@@ -112,18 +122,82 @@ body {
     height: 340px;
     border: 1px solid gray;
     border-radius: 10px;
-    display: grid;
+}
+
+#icons-text {
+    margin-top: 40px;
 }
 
 .player-text {
+    margin-top: 20px;
     margin-left: 10px;
 }
 
+.player-text .para-text {
+    font-weight: bold;
+    padding-top: 15px;
+
+}
+
 .player-text button {
-    padding: 3px 8px;
+    padding: 3px 15px;
+    font-size: 15px;
+    font-weight: bold;
 
 }
 
 .player-image img {
     width: 280px;
+}
+
+.player-text p {
+    display: inline-block;
+    margin-left: 5px;
+
+}
+
+.player-text span,
+i {
+    padding-left: 5px;
+
+}
+
+.message-icon {
+    margin-left: 20px;
+}
+
+/* ----------footer-Area------------- */
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Goal {
+    font-size: 3em;
+    padding-bottom: 70px;
+    border-bottom: 2px solid gray;
+    width: 1100px;
+    text-align: center;
+
+}
+
+.Goal a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menu-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: white;
 }
