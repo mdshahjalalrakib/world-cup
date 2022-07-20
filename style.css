@@ -8,9 +8,11 @@
 
 body {
     font-family: 'Roboto';
+    box-sizing: border-box;
 }
 
-/* -----first Section------- */
+/* ----first Section---- */
+/* -----content-btn-image start------- */
 .content-btn-image {
     background-color: black;
     width: 1150px;
@@ -18,19 +20,18 @@ body {
     border-radius: 30px;
     display: flex;
     margin: 50px auto;
-
 }
 
+/* ---------content div start--------- */
 .content {
     color: white;
     padding: 70px;
     width: 60%;
     align-items: center;
-
-
 }
 
 .content h1 {
+    width: 100%;
     margin-top: 50px;
     font: 800;
     font-size: 60px;
@@ -39,7 +40,6 @@ body {
 .content p {
     margin-top: 40px;
     margin-bottom: 30px;
-
     font: 300;
     font-size: 20px;
 }
@@ -51,31 +51,39 @@ body {
     color: white;
     font-size: 20px;
     font-weight: bold;
-
-
 }
+
+/* ---------content div End--------- */
 
 .image img {
     width: 550px;
     margin-top: 111px;
     margin-right: 50px;
-
 }
 
 .image {
     width: 50%;
 }
 
-.buttons {
+.leftbox-blogs {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -10px;
+    width: 80%;
+}
+
+/* -----content-btn-image End------- */
+
+
+/* ---Second Section--- */
+/* ---------left-box start--------- */
+.leftbox {
     background-color: gray;
     width: 250px;
     height: 250px;
     border-radius: 10px;
     text-align: center;
-
-}
-
-.buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,14 +91,13 @@ body {
     margin-top: -4px;
 }
 
-.button {
+.leftbox a {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    padding: 20px 30px;
-    width: 60%;
-    height: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 10px;
-
 }
 
 #redcolor {
@@ -98,15 +105,10 @@ body {
     color: white;
 }
 
-.asid-blogs {
-    display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: -10px;
-    width: 80%;
+/* ---------left-box end--------- */
 
-}
 
+/* ---------blogs main div start--------- */
 .blogs-main {
     margin-left: 15px;
     width: 100%;
@@ -166,6 +168,9 @@ i {
     margin-left: 20px;
 }
 
+/* ---------blogs main div End--------- */
+
+
 /* ----------footer-Area------------- */
 footer {
     width: 100%;
@@ -178,28 +183,43 @@ footer {
 }
 
 .Goal {
-    font-size: 3em;
-    padding-bottom: 70px;
-    border-bottom: 2px solid gray;
-    width: 1100px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    coloumn-gap: 0;
 
 }
+
+
 
 .Goal a {
     text-decoration: none;
     color: aliceblue;
 }
 
-.menu-list {
-    margin-top: 50px;
+.Goal a:nth-child(1) {
+    font-size: 2.3rem;
+}
+
+.hori-line {
+    width: 1000px;
+    height: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
     display: flex;
-    justify-content: space-evenly;
+}
+
+.menu-list {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+
 }
 
 .menu-list a {
     text-decoration: none;
     color: white;
+    padding: 40px;
 }
 
 .social-media {
@@ -214,61 +234,97 @@ footer {
     color: white;
 }
 
-/* For Responsibe Page */
-@media screen and (max-width:576px) {
+/*------------- For Responsibe Page----------- */
+@media screen and (max-width:600px) {
 
     /* ----first-section------ */
     .content-btn-image {
+        display: flex;
         flex-direction: column;
-        width: 630px;
-        height: 1150px;
+        width: 334px;
+        height: 472px;
         align-items: center;
         text-align: center;
-        margin-left: 18%;
+        margin-left: 2%;
+    }
+
+    .content h1 {
+        font-size: 20px;
+        margin-bottom: -30px;
+        margin-top: -30px;
+    }
+
+    .content p {
+        font-size: 9px;
     }
 
     .image {
-        margin-top: -173px;
-        margin-right: 300px;
+        margin-top: -155px;
+        height: 245 px;
+        width: 233px;
     }
 
-    .asid-blogs {
+    .image img {
+        width: 100%;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .leftbox {
+        margin-top: -70px;
+        background: none;
+        margin-left: -8%;
+    }
+
+    .leftbox a {
+        border: 1px solid rgb(192, 191, 191);
+    }
+
+    .leftbox-blogs {
         display: flex;
         flex-direction: column;
+
     }
 
     .blogs-main {
         margin-left: 15px;
-        width: 100%;
+        width: 50%;
         margin-top: -4px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
         column-gap: 15px;
-        margin-left: 50%;
+        margin-left: -60px
     }
-
-    .buttons {
-        background: none;
-        margin-bottom: 50px;
-        margin-left: 50%;
-    }
-
-    .button {
-        border: 1px solid rgb(201, 201, 201);
-    }
-
 
     footer {
-        margin-left: 5%;
-        width: 577px;
-
+        width: 375px;
     }
 
     .menu-list {
         flex-direction: column;
-
+        gap: 15px;
+        margin-top: 20px;
     }
 
+    .menu-list a {
+        margin: 0;
+        padding: 0;
+        font-size: .8rem;
+        flex-direction: column;
+    }
 
+    .blogs-main {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Goal:nth-child(1) {
+        font-size: 2.5rem;
+    }
 }
