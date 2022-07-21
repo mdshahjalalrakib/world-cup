@@ -15,8 +15,7 @@ body {
 /* -----content-btn-image start------- */
 .content-btn-image {
     background-color: black;
-    width: 1150px;
-    height: 646px;
+    width: 100% height: 646px;
     border-radius: 30px;
     display: flex;
     margin: 50px auto;
@@ -26,22 +25,20 @@ body {
 .content {
     color: white;
     padding: 70px;
-    width: 60%;
+    width: 50%;
     align-items: center;
+    margin-top: 50px;
 }
 
 .content h1 {
     width: 100%;
-    margin-top: 50px;
-    font: 800;
-    font-size: 60px;
+    font-size: 5rem;
 }
 
 .content p {
     margin-top: 40px;
     margin-bottom: 30px;
-    font: 300;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .btn {
@@ -49,16 +46,16 @@ body {
     padding: 15px 30px;
     border-radius: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 /* ---------content div End--------- */
 
 .image img {
-    width: 550px;
-    margin-top: 111px;
-    margin-right: 50px;
+    width: 100%;
+    margin-top: 25%;
+    margin-left: -10%;
 }
 
 .image {
@@ -98,6 +95,7 @@ body {
     background-color: white;
     margin-top: 10px;
     border-radius: 10px;
+    font-size: 1 rem;
 }
 
 #redcolor {
@@ -190,23 +188,13 @@ footer {
 
 }
 
-
-
 .Goal a {
     text-decoration: none;
     color: aliceblue;
 }
 
-.Goal a:nth-child(1) {
+.Goal a {
     font-size: 2.3rem;
-}
-
-.hori-line {
-    width: 1000px;
-    height: 0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 30px;
-    display: flex;
 }
 
 .menu-list {
@@ -235,17 +223,27 @@ footer {
 }
 
 /*------------- For Responsibe Page----------- */
+
+/*------------- For Tab view----------- */
+@media screen and (max-width: 834px) {}
+
+
+/*------------- For Mobile View----------- */
+
 @media screen and (max-width:600px) {
 
     /* ----first-section------ */
     .content-btn-image {
         display: flex;
         flex-direction: column;
-        width: 334px;
+        width: 100%;
         height: 472px;
         align-items: center;
         text-align: center;
-        margin-left: 2%;
+    }
+
+    .content {
+        margin-top: 0;
     }
 
     .content h1 {
@@ -259,7 +257,7 @@ footer {
     }
 
     .image {
-        margin-top: -155px;
+        margin-top: -100px;
         height: 245 px;
         width: 233px;
     }
@@ -276,32 +274,33 @@ footer {
     .leftbox {
         margin-top: -70px;
         background: none;
-        margin-left: -8%;
+        margin-left: 10%;
+        width: 100%;
     }
 
     .leftbox a {
         border: 1px solid rgb(192, 191, 191);
+        font-size: 1rem;
     }
 
     .leftbox-blogs {
         display: flex;
         flex-direction: column;
+        width: auto;
 
     }
 
     .blogs-main {
-        margin-left: 15px;
-        width: 50%;
+        width: 100%;
         margin-top: -4px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
         column-gap: 15px;
-        margin-left: -60px
     }
 
     footer {
-        width: 375px;
+        width: 100%;
     }
 
     .menu-list {
@@ -327,4 +326,12 @@ footer {
     .Goal:nth-child(1) {
         font-size: 2.5rem;
     }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .footer {
+        width: 100%;
+    }
+
 }
